@@ -71,51 +71,80 @@
           </div>
         </div>
     
-        <!-- Contributions -->
-        <div class="mb-5">
-          <h2 class="section-title text-center mb-4">Contributions</h2>
-          <div class="row">
-            <div class="col-lg-4">
-              <h3>Concept</h3>
-              <p>Proposed a post-apocalyptic setting combining machines and nature. The team was excited about making a game with multiple playable characters.</p>
-              <img src="example-concept-art.jpg" alt="Concept Art">
-              <p class="text-muted text-center">Concept Art showing a potential game scenario</p>
+        <div class="container my-5">
+          <!-- Title -->
+          <h2 class="text-center mb-5">Contributions</h2>
+      
+          <!-- First Section -->
+          <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+              <h3 class="py-4">Concept</h3>
+              <p>Initially the idea was to create a very <b>difficult game</b> with a <b>strong narration</b> component.
+                Unfortunately <b>the project was downsized</b> after the fourth team member decided to leave the academy and his narrative designer role.As result we decided to mainly <b>focus on the combat</b> gameplay, repurposing the narrative material to create a <b>lore</b>.</p>
             </div>
-            <div class="col-lg-4">
-              <h3>Game Design</h3>
-              <p>Defined game mechanics and contributed to game design documents. Focused on skills and limitations of individual robots.</p>
-              <img src="example-characters.jpg" alt="Characters">
-              <p class="text-muted text-center">Ant, Tyr, and TyrAnt</p>
-            </div>
-            <div class="col-lg-4">
-              <h3>Programming</h3>
-              <p>Created character state and camera controllers in C#. Managed continuous camera switch between characters.</p>
-              <div class="box">Gameplay</div>
-              <p class="text-muted text-center">In-game footage showing cooperation</p>
+            <div class="col-md-6 text-center">
+              <div class="ratio ratio-16x9 my-4">
+                <iframe width="1280" height="480" src="https://www.youtube.com/embed/c9vyxeWhyQ8" title="Silent Whisper - Lore" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded"></iframe>
+              </div>
+              <div class="text-muted fst-italic text-center mt-2">
+                In-game footage showing how lore is conveyed in the game.
+              </div>
             </div>
           </div>
-        </div>
-    
-        <!-- Learnings -->
-        <div class="mb-5">
-          <h2 class="section-title text-center mb-4">What did I learn?</h2>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="learn-box">
-                <p>Too much freedom may bore the player. We tried to leave the player as free as possible, but without a clear objective the interest in the game can be easily lost</p>
+      
+          <!-- Second Section -->
+          <div class="row align-items-center py-5">
+            <div class="col-md-6">
+              <h3 class="py-4">Game Design & Level Design</h3>
+              <p>I designed most of the combat system, like the interaction between the various combat mechanics and the <b>enemies behaviour</b>.For example, I enhanced the <b>fast-paced combat</b> by increasing hit knockback, in order to force player to repositioning after each attack.I designed also the first game scenario as a sort of <b>safe playground</b> where players can experiment with game mechanics without being punished.</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <div class="ratio ratio-16x9 my-4">
+                <div class="col-md-6 text-center">
+                  <div class="ratio ratio-16x9 my-4">
+                    <iframe width="660" height="371" src="https://www.youtube.com/embed/of_1rDkwxas" title="Silent Whisper - Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="text-muted fst-italic text-center mt-2">
+                In-game footage showing the mentioned safe playground
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="learn-box">
-                <p>Feedbacks are essential to understand what it is happening.
-                  For example, there is no particle notifying that an enemy is healing with a green brick, as a consequence some players have not understood how defeat enemies that are on top of those bricks.</p>
-              </div>
+        </div>
+
+
+        <!-- third Section -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3 class="py-4">Programming</h3>
+            <p>I wrote in C# <b>most of the game scripts</b>, excluding only part of the UI system.The most difficult challenge was to manage the <b>hitboxes</b> to make them match the <b>animations</b>.For example, the damage hitbox had to appear only at a certain point during the attack script.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="img/silent-3.png" alt="Game Design Image" class="img-fluid rounded">
+            <div class="text-muted fst-italic text-center mt-2">
+              Screenshot of an animation frame and its damage hitbox
             </div>
           </div>
         </div>
       </div>
+    
 
-      <footer class="bg-light py-4 border-top">
+      <div class="container my-5">
+        <!-- Title -->
+        <h2 class="text-center mb-5">What did I learn?</h2>
+    
+        <!-- First Section -->
+        <div class="row align-items-center mb-4">
+          <div class="col-md-12 align-items-center">
+            <p>The <b>onboarding</b> phase is crucial.<br>
+              The combat was fun and compelling when we played it, but other players could not experience it to the fullest because we failed to teach properly how the combat mechanics worked. <br><br>
+              Without the right <b>HUD</b> the player is lost. <br>
+              We tried to make a diegetic health system, but the result was that players didn’t understand when they were close to the Game Over. <br><br>
+              Take into account <b>unexpected problems</b> during the developing time.</p>
+          </div>
+        </div>
+
+      <footer class="py-4 border-top">
         <div class="container">
             <div class="row">
                 <!-- Contacts Section -->
