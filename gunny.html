@@ -95,9 +95,9 @@
           <div class="row align-items-center py-5">
             <div class="col-md-6">
               <h3 class="py-4">Game Design</h3>
-              <p>I decided to use the shooting system initially implemented only for the combat also for the interaction with the bricks. In this way we avoided adding too many mechanics.
+              <p>I decided to use the shooting system initially implemented only for the combat also for the interaction with the bricks. In this way we <b>avoided</b> adding <b>too many mechanics</b>. <br><br>
 
-                I designed the enemies trying to make them very different from each other while maintaining simple behaviours.</p>
+                I <b>designed the enemies</b> trying to make them very different from each other while maintaining simple behaviours.</p>
             </div>
             <div class="col-md-6 text-center">
               <img src="img/Pre-alphagunnyGIF.gif" alt="Game Design Image" class="img-fluid rounded" width="660" height="371">
@@ -108,21 +108,57 @@
         </div>
 
                 <!-- third Section -->
-                <div class="row align-items-center py-5">
+                <div class="row py-5">
                   <div class="col-md-6">
                     <h3 class="py-4">Level Design</h3>
-                    <p>I wrote in C# <b>most of the game scripts</b>, excluding only part of the UI system.The most difficult challenge was to manage the <b>hitboxes</b> to make them match the <b>animations</b>.For example, the damage hitbox had to appear only at a certain point during the attack script.</p>
+                    <p>I designed the first level with a linear structure <br> and a lot of safe zones where players <br> can experiment mechanics without being punished.
+
+                      I built environmental worldbuilding around an NPC which introduce the player to the game.
+                      For example, the first air duct half is much dirtier than the second one since it is no longer used.
+                      
+                      I tried also to convey the sense of wonder through the curvatures and the air duct end.
+                      
+                      Once out of the duct the level design philosophy completely changes. In fact, players are now in an open area to explore in the order they prefer.
+                         
+                      The experience could be very different according to the brick you can interact with.
+                      For example, the other level I designed has a maze under the bed that can be broken by interacting with blue bricks, but, if you have not already unlocked the blue power, you have to find a way out without any help.
+                      
+                      I tried to put each enemy in the best possible spot to make it even more dangerous. Obviously color powers can help players to better handle the encounters with the evil mages.
+                      
+                      About that, the amount of batteries collectible without powers was designed in order to make players able to unlock at least the green power, which can be very useful against the teleporter mages above the pillows.
+                      
+                      In conclusion I wrote also the dialogues for all the characters in my levels.</p>
                   </div>
                   <div class="col-md-6 text-center">
                     <div class="ratio ratio-16x9 my-4">
                       <div class="col-md-6 text-center">
                         <div class="ratio ratio-16x9 my-4">
-                          <iframe width="660" height="371" src="https://www.youtube.com/embed/of_1rDkwxas" title="Silent Whisper - Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded"></iframe>
+                          <iframe width="660" height="371" src="https://www.youtube.com/embed/TAzg64LGKag" title="Gunny: a Colorful Adventure - Tutorial Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid rounded"></iframe>
                         </div>
                       </div>
                     </div>
                     <div class="text-muted fst-italic text-center mt-2">
-                      In-game footage showing the mentioned safe playground
+                      In-game footage showing a full gameplay of the air duct area
+                    </div>
+                    <div class="ratio ratio-16x9 my-4">
+                      <div class="col-md-6 text-center">
+                        <div class="ratio ratio-16x9 my-4">
+                          <iframe width="660" height="371" src="https://www.youtube.com/embed/0e7l-LMPi3M" title="Gunny: a Colorful Adventure - Bed Area (no powers)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid rounded"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-muted fst-italic text-center mt-2">
+                      In-game footage showing a (no powers) gameplay of the bed area
+                    </div>
+                    <div class="ratio ratio-16x9 my-4">
+                      <div class="col-md-6 text-center">
+                        <div class="ratio ratio-16x9 my-4">
+                          <iframe width="660" height="371" src="https://www.youtube.com/embed/3STvEl_j9Sw" title="Gunny: a Colorful Adventure - Bed Area (full powers)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid rounded" ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-muted fst-italic text-center mt-2">
+                      In-game footage showing a (full powers) gameplay of the bed area
                     </div>
                   </div>
                 </div>
@@ -132,12 +168,14 @@
         <div class="row align-items-center py-5">
           <div class="col-md-6">
             <h3 class="py-4">Programming</h3>
-            <p>I wrote in C# <b>most of the game scripts</b>, excluding only part of the UI system.The most difficult challenge was to manage the <b>hitboxes</b> to make them match the <b>animations</b>.For example, the damage hitbox had to appear only at a certain point during the attack script.</p>
+            <p>I create all the <b>blueprints</b> necessary to make the game work, excluding what concerns the UI system. <br><br>
+
+              As my first time on Unreal Engine I struggled a lot with the game <b>optimization</b>, especially due to the <b>colored bricks</b>.<br>In fact, in a first iteration players would be able to interact individually with each brick, then I necessarily had to change that by grouping close bricks into a single instance.</p>
           </div>
           <div class="col-md-6 text-center">
-            <img src="img/gunny-img-bricks3.png" alt="Game Design Image" class="img-fluid rounded">
+            <img src="img/gunny-img-bricks3.png" alt="Game Design Image" class="img-fluid rounded" width="660" height="371">
             <div class="text-muted fst-italic text-center mt-2">
-              GIF of a pre-alpha showing the shooting system
+              In-engine screenshoots showing the colored bricks
             </div>
           </div>
         </div>
