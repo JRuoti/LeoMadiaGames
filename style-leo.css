@@ -1,7 +1,6 @@
 
         body {
             margin: 0;
-            padding-top: 80px; /* Space for fixed navbar */
             font-family: Poppins;
         }
 
@@ -52,4 +51,36 @@
 
 .nav-item{
     padding: 2rem;
+}
+
+/*-----------------------------------NAVBAR--NUOVA------------------------------------------------------------------ */
+
+ /* Custom styling to control navbar height */
+ .custom-navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .custom-navbar a.nav-title {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  .custom-navbar a.nav-title:hover {
+    color: #157347; /* Match button color */
+    transition-duration: 0.5s;
+  }
+  .custom-navbar .btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  }
+
+
+.nav-title br{
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .nav-title br{
+        display: inline;
+    }
 }
