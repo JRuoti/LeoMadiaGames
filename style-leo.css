@@ -69,12 +69,7 @@
     color: #157347; /* Match button color */
     transition-duration: 0.5s;
   }
-  .custom-navbar .btn {
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-  }
-
-
+ 
 .nav-title br{
     display: none;
 }
