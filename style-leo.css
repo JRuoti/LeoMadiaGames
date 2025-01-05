@@ -2,6 +2,7 @@
         body {
             margin: 0;
             font-family: Poppins;
+            padding-top: 100px;
         }
 
 
@@ -77,5 +78,9 @@
 @media (max-width: 576px) {
     .nav-title br{
         display: inline;
+    }
+
+    body{
+        padding-top: 150px;
     }
 }
