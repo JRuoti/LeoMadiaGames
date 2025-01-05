@@ -11,25 +11,14 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Leonardo<br>Madia<br>Games</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Digital</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="analog-leo.html">Analog</a>
-                    </li>
-                </ul>
-                <button class="btn btn-outline-success" type="button">Get in Touch</button>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar custom-navbar bg-body-tertiary fixed-top py-2 border-bottom border-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Center Title -->
+      <a href="index.html" class="nav-title"><h1>Leonardo <br> Madia's <br> Games</h1></a>
+      <!-- Right Button -->
+      <a href="mailto:madialeonardo@gmail.com" class="btn btn-success">Get in touch</a>
+    </div>
+  </nav>
 
 
     <div class="container py-5">
@@ -174,5 +163,32 @@
         </footer>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let lastScrollTop = 0; // Per tenere traccia della posizione precedente dello scroll
+      let ticking = false;   // Flag per evitare chiamate multiple
+    
+      const navbar = document.querySelector(".navbar"); // Seleziona la navbar
+    
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (scrollTop > lastScrollTop) {
+              // Se stiamo scrollando verso il basso
+              navbar.classList.add("hidden");
+            } else {
+              // Se stiamo scrollando verso l'alto
+              navbar.classList.remove("hidden");
+            }
+    
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Evita valori negativi su iOS
+            ticking = false; // Resetta il flag
+          });
+    
+          ticking = true; // Imposta il flag per prevenire altre esecuzioni
+        }
+      });
+    </script>
 </body>
 </html>
