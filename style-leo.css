@@ -5,6 +5,9 @@
             padding-top: 100px;
         }
 
+        .navbar {
+            transition: top 0.3s ease-in-out;
+          }
 
         .navbar-brand {
             font-size: 1.2rem;
@@ -79,6 +82,12 @@
     .nav-title br{
         display: inline;
     }
+
+    
+    .navbar {
+              top: -200px; /* Cambia in base all'altezza reale della navbar */
+            }
+    
 
     body{
         padding-top: 150px;
