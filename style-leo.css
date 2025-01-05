@@ -23,6 +23,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
+
         .fixed-height {
             height: 225px;
         }
