@@ -5,8 +5,14 @@
             padding-top: 100px;
         }
 
+        
         .navbar {
-            transition: top 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+          }
+        
+        .navbar.hidden {
+            transform: translateY(-100%);
+            opacity: 0;
           }
 
         .navbar-brand {
@@ -82,12 +88,6 @@
     .nav-title br{
         display: inline;
     }
-
-    
-    .navbar {
-              top: -200px; /* Cambia in base all'altezza reale della navbar */
-            }
-    
 
     body{
         padding-top: 150px;
