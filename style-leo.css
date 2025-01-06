@@ -69,6 +69,20 @@ color: #157347;
 transition: 0.5s;
   }
 
+
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px); /* Alza leggermente la card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Ombra più marcata */
+  }
+
+  
+
+
+
 /*-----------------------------------STILI------------------------------------------------------------------ */
 
 .nav-item{
