@@ -80,9 +80,6 @@ transition: 0.5s;
   }
 
   
-
-
-
 /*-----------------------------------STILI------------------------------------------------------------------ */
 
 .nav-item{
@@ -110,7 +107,7 @@ transition: 0.5s;
     display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .nav-title br{
         display: inline;
     }
@@ -118,4 +115,6 @@ transition: 0.5s;
     body{
         padding-top: 150px;
     }
+
 }
+
