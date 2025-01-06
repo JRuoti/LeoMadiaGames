@@ -84,6 +84,14 @@ transition: 0.5s;
   }
 
   
+  .img-overview {
+    height: auto; /* Altezza automatica per mantenere le proporzioni */
+    max-height: 300px; /* Limita l'altezza su desktop */
+    object-fit: contain;
+  }
+
+
+
 /*-----------------------------------STILI------------------------------------------------------------------ */
 
 .nav-item{
@@ -119,6 +127,11 @@ transition: 0.5s;
     body{
         padding-top: 150px;
     }
+
+    .img-overview {
+      max-height: 250px; /* Altezza più piccola per dispositivi mobili */
+    }
+
 
 }
 
