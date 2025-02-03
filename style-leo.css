@@ -139,3 +139,25 @@ transition: 0.5s;
 
 }
 
+/*-----------------------------------PROGRESSBAR------------------------------------------------------------------ */
+
+
+/* Progress bar container */
+#progress-container {
+  position: fixed;
+  top: 0;  /* Verrà comunque nascosto quando la navbar è visibile */
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1); /* Sfondo opaco, opzionale */
+  z-index: 9999;
+  display: none; /* Di default nascosta */
+}
+
+/* Progress bar vera e propria */
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #157347; /* Colore della barra (personalizzabile) */
+  transition: width 0.25s ease-out;
+}
