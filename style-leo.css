@@ -123,6 +123,10 @@ transition: 0.5s;
     display: none;
 }
 
+.nav-title{
+  font-family: 'Bespoke Stencil', sans-serif;
+}
+
 @media (max-width: 768px) {
     .nav-title br{
         display: inline;
