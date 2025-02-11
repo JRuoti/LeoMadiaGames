@@ -124,7 +124,7 @@ transition: 0.5s;
 }
 
 .nav-title{
-  font-family: 'Bespoke Stencil', sans-serif;
+  font-family: 'Bespoke Stencil Medium', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -164,4 +164,16 @@ transition: 0.5s;
   height: 100%;
   background-color: #157347; /* Colore della barra (personalizzabile) */
   transition: width 0.25s ease-out;
+}
+
+/*-----------------------------------CUSTOMFONT------------------------------------------------------------------ */
+
+@font-face {
+  font-family: 'Bespoke Stencil Bold';
+  src: url('font-custom/BespokeStencil-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Bespoke Stencil Medium';
+  src: url('font-custom/BespokeStencil-Medium.otf');
 }
